@@ -9,8 +9,8 @@ import GlobalStateProvider from "./context/GlobalState"
 function App() {
 	return (
 		<GlobalStateProvider>
-			<Header />
 			<div className="container">
+				<Header />
 				<Balance />
 				<IncomeExpenses />
 				<TransactionList />
