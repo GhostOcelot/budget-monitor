@@ -1,3 +1,5 @@
+# Application for counting incomes and expenses. Uses local storage to keep data
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
