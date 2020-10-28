@@ -19,6 +19,8 @@ function App() {
 				<TransactionList
 					setShowIncomes={setShowIncomes}
 					setShowExpenses={setShowExpenses}
+					showIncomes={showIncomes}
+					showExpenses={showExpenses}
 				/>
 				<AddTransaction />
 			</div>

@@ -2,7 +2,12 @@ import React, { useContext, useState, useEffect } from "react"
 import { GlobalContext } from "../context/GlobalState"
 import Transaction from "./Transaction"
 
-const TransactionList = ({ setShowIncomes, setShowExpenses }) => {
+const TransactionList = ({
+	setShowIncomes,
+	setShowExpenses,
+	showIncomes,
+	showExpenses
+}) => {
 	const { transactions } = useContext(GlobalContext)
 
 	const [filteredTransactions, setFilter] = useState(transactions)
@@ -39,13 +44,28 @@ const TransactionList = ({ setShowIncomes, setShowExpenses }) => {
 		<>
 			<h3 className="details">Details:</h3>
 			<div className="details-btn-container">
-				<button className="details-btn" onClick={filterAll}>
+				<button
+					className={`details-btn ${
+						showIncomes && showExpenses ? "active" : ""
+					}`}
+					onClick={filterAll}
+				>
 					all
 				</button>
-				<button className="details-btn" onClick={filterIncomes}>
+				<button
+					className={`details-btn ${
+						showIncomes && !showExpenses ? "active" : ""
+					}`}
+					onClick={filterIncomes}
+				>
 					incomes
 				</button>
-				<button className="details-btn" onClick={filterExpenses}>
+				<button
+					className={`details-btn ${
+						!showIncomes && showExpenses ? "active" : ""
+					}`}
+					onClick={filterExpenses}
+				>
 					expenses
 				</button>
 			</div>
