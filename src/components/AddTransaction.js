@@ -33,7 +33,7 @@ const AddTransaction = () => {
 						<small>negative - expense, positive - income</small>
 					</label>
 					<input
-						type="number"
+						type="text"
 						value={amount}
 						onChange={e => setAmount(e.target.value)}
 					/>

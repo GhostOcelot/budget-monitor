@@ -2,15 +2,6 @@ import React, { createContext, useReducer, useEffect } from "react"
 import RootReducer from "./RootReducer"
 import { v4 as uuidv4 } from "uuid"
 
-// const initialState = {
-// 	transactions: [
-// { id: 1, text: "Flowers", amount: -20 },
-// { id: 2, text: "Salary", amount: 300 },
-// { id: 3, text: "Book", amount: -10 },
-// { id: 4, text: "Camera", amount: 150 }
-// 	]
-// }
-
 export const GlobalContext = createContext()
 
 const GlobalStateProvider = props => {

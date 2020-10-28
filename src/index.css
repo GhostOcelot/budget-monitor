@@ -21,8 +21,14 @@ body {
 
 .container {
 	margin: 30px auto;
-	width: 350px;
+	width: 400px;
 	max-width: 90%;
+}
+
+.header {
+	padding-bottom: 10px;
+
+	border-bottom: 1px solid #d7fdf4;
 }
 
 h1 {
@@ -41,8 +47,30 @@ h3 {
 }
 
 h4 {
-	margin: 0;
+	margin: 40px 0 0 0;
 	text-transform: uppercase;
+}
+
+.details {
+	margin: 40px 0 0;
+}
+
+.details-btn-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.details-btn {
+	width: calc(100% / 3 - 12px);
+	font-family: "Lato", sans-serif;
+	border: none;
+	margin: 0 4px;
+	padding: 7px;
+	border-radius: 0 0 4px 4px;
+	background: #276b5b;
+	color: #d7fdf4;
+	text-transform: capitalize;
+	font-size: 14px;
 }
 
 .inc-exp-container {
@@ -50,17 +78,17 @@ h4 {
 	background-color: #d7fdf4;
 	padding: 10px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	margin: 20px 0;
 	border-radius: 4px;
 }
 
 .inc-exp-container > div {
-	flex: 1;
 	text-align: center;
+	margin: 10px;
 }
 
-.inc-exp-container > div:first-of-type {
+.inc-exp-divider {
 	border-right: 1px solid #74b0a2;
 }
 
@@ -109,7 +137,8 @@ input[type="number"] {
 }
 
 .btn:focus,
-.delete-btn:focus {
+.delete-btn:focus,
+.details-btn {
 	outline: 0;
 }
 
