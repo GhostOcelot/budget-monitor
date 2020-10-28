@@ -21,7 +21,7 @@ body {
 
 .container {
 	margin: 30px auto;
-	width: 400px;
+	width: 360px;
 	max-width: 90%;
 }
 
@@ -76,26 +76,31 @@ h4 {
 .inc-exp-container {
 	border: 1px solid #74b0a2;
 	background-color: #d7fdf4;
-	padding: 10px;
+	padding: 10px 0;
 	display: flex;
 	justify-content: center;
 	margin: 20px 0;
 	border-radius: 4px;
 }
 
+.inc-exp-container h2 {
+	margin-top: 0;
+}
+
 .inc-exp-container > div {
 	text-align: center;
-	margin: 10px;
+	margin: 6px;
 }
 
 .inc-exp-divider {
 	border-right: 1px solid #74b0a2;
+	margin: 0;
 }
 
 .money {
-	font-size: 20px;
+	font-size: 19px;
 	letter-spacing: 1px;
-	margin: 5px 0;
+	margin: 5px 0 0 0;
 }
 
 .money.plus {
