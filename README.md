@@ -1,6 +1,6 @@
-## Budget monitor
+# Budget monitor
 
-# Demo:
+## Demo:
 
 `https://unwieldy-house.surge.sh/`
 
