@@ -8,8 +8,8 @@ const AddTransaction = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault()
-		if (text.trim().length && amount) {
-			addTransaction(text, parseInt(amount))
+		if (text.trim().length && !isNaN(Number(amount))) {
+			addTransaction(text, Number(amount));
 			setText("")
 			setAmount("")
 		}
